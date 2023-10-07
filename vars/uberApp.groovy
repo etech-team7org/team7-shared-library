@@ -19,6 +19,11 @@ def call(String repoUrl){
                    sh 'lscpu'
                }
            }
+           stage('build'){
+            steps{
+                echo "demo diff app"
+            }
+           }
        }
     }  
 }
